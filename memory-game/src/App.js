@@ -11,8 +11,8 @@ class App extends Component {
     friends,
     clickedFriends: [],
     score: 0,
-    victory: 15,
-    message: ""
+    bestScore: 0,
+    victory: 12
   };
 
   shuffle = id => {
@@ -21,27 +21,30 @@ class App extends Component {
     if (clickedFriends.includes(id)) {
       this.setState({
         clickedFriends: [],
-        score: 0,
-        message: "Sorry, You Lost! Click an Friend to Start Again."
+        score: 0
       });
       return;
     } else {
       clickedFriends.push(id);
 
-      if (clickedFriends.length === 15) {
+      if (clickedFriends.length === 12) {
         this.setState({
           clickedFriends: [],
-          score: 15,
-          message: "You Won!"
+          score: 12
         });
         return;
       }
       this.setState({
         friends,
         clickedFriends,
-        score: clickedFriends.length,
-        message: "Correct!"
+        score: clickedFriends.length
       });
+
+      if(this.state.score >= this.state.bestScore) {
+        this.setState({
+          bestScore: this.state.score + 1
+        });
+      }
 
       friends.sort(function() {
         return 0.5 - Math.random();
@@ -54,7 +57,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>MEMORY GAME</Title>
-        <Score className="text-right" score={this.state.score}/>
+        <Score score={this.state.score} bestScore={this.state.bestScore}/>
         <div className="row justify-content-center">
           {this.state.friends.map(friend => (
             <FriendCard
