@@ -1,0 +1,7 @@
+.score {
+  font-weight: bold;
+  font-size: 30px;
+  list-style: none;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #000;
+}
