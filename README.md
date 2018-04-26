@@ -9,3 +9,6 @@
 * The user's score is reset to 0 if the user clicks the same character more than once.
 * Every time a character is clicked, the characters shuffle themselves in a random order.
 * Once the user's score is reset after an incorrect guess, the game restarts.
+
+### > __Try it Out:__
+[![Memory Game](memorygame.png)](https://aolaleye.github.io/memory-game/)
