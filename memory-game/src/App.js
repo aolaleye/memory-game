@@ -53,7 +53,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Memory Game</Title>
+        <Title>MEMORY GAME</Title>
         <Score className="text-right" score={this.state.score}/>
         <div className="row justify-content-center">
           {this.state.friends.map(friend => (
