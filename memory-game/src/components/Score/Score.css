@@ -1,8 +1,16 @@
 .score {
   font-weight: bold;
-  font-size: 30px;
+  text-shadow: 2px 1px 8px #fff;
+  font-size: 20px;
   list-style: none;
   margin-bottom: 50px;
   /* border-bottom: 2px solid #000; */
   display: inline;
+}
+
+@media only screen and (min-width: 600px)  {
+
+  .score {
+    font-size: 30px;
+  }
 }
