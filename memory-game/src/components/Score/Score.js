@@ -6,7 +6,7 @@ const Score = props => (
     <div className="nav-wrapper">
       <ul className="text-center p-0">
         <li className="score mx-3">Current Score: {props.score}</li>
-        <li className="score mx-3">Best Score: {props.bestScore}</li>
+        <li className="score best-score mx-3">Best Score: {props.bestScore}</li>
       </ul>
     </div>
   </nav>
