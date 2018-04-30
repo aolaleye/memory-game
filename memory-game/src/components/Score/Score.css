@@ -1,11 +1,17 @@
 .score {
   font-weight: bold;
-  text-shadow: 2px 1px 8px #fff;
+  text-shadow: 1px 0px 3px #fff;
   font-size: 20px;
   list-style: none;
   margin-bottom: 50px;
   /* border-bottom: 2px solid #000; */
   display: inline;
+}
+
+.best-score {
+  background: #f58600;
+  padding: 8px 10px;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 600px)  {
