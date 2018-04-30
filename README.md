@@ -1,6 +1,6 @@
 # Memory Game
 
-#### React breaks up this application's UI into components, manages its component state and responds to user events to create a Nickelodeon-themed memory game.
+#### React breaks up this application's UI into components, manages the state of its components and responds to user events in order to create a Nickelodeon-themed memory game.
 
 ### Overview
 * This application renders images of different Nickelodeon characters to the screen. Each character listens for click events.
