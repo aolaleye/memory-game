@@ -11,8 +11,7 @@ class App extends Component {
     friends,
     clickedFriends: [],
     score: 0,
-    bestScore: 0,
-    victory: 12
+    bestScore: 0
   };
 
   shuffle = id => {
